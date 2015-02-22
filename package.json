@@ -1,0 +1,52 @@
+{
+  "name": "constable",
+  "version": "0.0.1",
+  "description": "Update your bower dependencies to their latest version",
+  "main": "index.js",
+  "bin": {
+    "constable": "bin/cli"
+  },
+  "scripts": {
+    "compile": "coffee -cbo lib src && coffee -cb test",
+    "dev": "bin/dev",
+    "lint": "bin/lint",
+    "lint-cov": "bin/lint-cov",
+    "postinstall": "npm run compile",
+    "test": "bin/test",
+    "test-cov": "bin/test-cov",
+    "test-ci-build": "bin/test-ci-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brentlintner/constable.git"
+  },
+  "keywords": [
+    "bower",
+    "dependency",
+    "update"
+  ],
+  "author": "Brent Lintner <brent.lintner@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brentlintner/constable/issues"
+  },
+  "homepage": "https://github.com/brentlintner/constable",
+  "dependencies": {
+    "bower": "1.3.12",
+    "coffee-script": "1.9.0",
+    "commander": "2.6.0",
+    "lodash": "3.3.0",
+    "minilog": "2.0.6"
+  },
+  "devDependencies": {
+    "chai": "2.0.0",
+    "coffeelint": "1.9.0",
+    "istanbul": "0.3.6",
+    "mimus": "0.1.2",
+    "mocha": "2.1.0",
+    "shelljs": "^0.3.0",
+    "sinon": "1.12.2",
+    "sinon-chai": "2.7.0",
+    "wrench": "1.5.8"
+  }
+}

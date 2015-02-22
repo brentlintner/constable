@@ -50,7 +50,7 @@ configure = ->
             "List available updates"
     .option "-u, --update",
             "Update bower.json with the latest available versions"
-    .option "-t, --tabbing",
+    .option "-t, --tabbing [number]",
             "Number of spaces to use when overwriting bower.json (default=2)"
     .option "-q, --quiet",
             "Be wvery wvery quiet."

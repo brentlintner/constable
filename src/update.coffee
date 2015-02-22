@@ -5,9 +5,14 @@ logger = require "./logger"
 list = require "./list"
 log = logger.create "update"
 
+to_n = (str) ->
+  if typeof str == "string" && /[0-9]*/.test str
+    Number str
+  else str
+
 update_cwd_deps = (opts={}, cb) ->
   bower_json = path.join(process.cwd(), "bower.json")
-  tabbing = opts.tabbing || 2
+  tabbing = if opts.tabbing then to_n(opts.tabbing) else 2
   file = require bower_json
   dependencies = file.dependencies
   devDependencies = file.devDependencies

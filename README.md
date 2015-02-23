@@ -1,4 +1,4 @@
-> # constable [![Circle CI](https://circleci.com/gh/brentlintner/constable.svg?style=svg)](https://circleci.com/gh/brentlintner/constable)
+> # constable [![Circle CI](https://circleci.com/gh/brentlintner/constable.svg?style=svg)](https://circleci.com/gh/brentlintner/constable) [![Dependency Status](https://david-dm.org/brentlintner/constable.svg)](https://david-dm.org/brentlintner/constable) [![devDependency Status](https://david-dm.org/brentlintner/constable/dev-status.svg)](https://david-dm.org/brentlintner/constable#info=devDependencies)
 > Update your [bower](http://bower.io) dependencies to their latest version.
 
 ## Installation

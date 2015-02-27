@@ -20,7 +20,7 @@ run = (type) ->
     ui: "bdd"
     reporter: "spec"
     slow: 6000
-    timeout: 10000
+    timeout: 15000
 
   runner.files = all_specs()
 

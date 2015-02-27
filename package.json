@@ -1,6 +1,6 @@
 {
   "name": "constable",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Update your bower dependencies to their latest version",
   "main": "index.js",
   "bin": {

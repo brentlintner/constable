@@ -47,15 +47,15 @@ configure = ->
     .version pkg.version
     .usage "[options]"
     .option "-l, --list",
-            "List available updates"
+            "list available updates"
     .option "-u, --update",
-            "Update bower.json with the latest available versions"
+            "update bower.json with the latest available versions"
     .option "-t, --tabbing [number]",
-            "Number of spaces to use when overwriting bower.json (default=2)"
+            "number of spaces to use when overwriting bower.json (default=2)"
     .option "-q, --quiet",
-            "Be wvery wvery quiet."
+            "be wvery wvery quiet."
     .option "-v, --verbose",
-            "Log all the things."
+            "log all the things."
 
   app.outputHelp() if not process.argv.slice(2).length
 

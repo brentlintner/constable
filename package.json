@@ -1,6 +1,6 @@
 {
   "name": "constable",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Update your bower dependencies to their latest version",
   "main": "lib/index.js",
   "bin": {
@@ -14,7 +14,8 @@
     "postinstall": "npm run compile",
     "test": "bin/test",
     "test-cov": "bin/test-cov",
-    "test-ci-build": "bin/test-ci-build"
+    "test-ci-build": "bin/test-ci-build",
+    "vile": "vile p -n -is -u constable -x src.coffee:lib.js"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,16 @@
     "coffee-script": "1.9.0",
     "commander": "2.6.0",
     "lodash": "3.3.0",
-    "minilog": "2.0.6"
+    "minilog": "2.0.6",
+    "retire": "^1.2.13",
+    "vile": "^0.14.0",
+    "vile-coffeelint": "^0.1.16",
+    "vile-coverage": "^0.2.15",
+    "vile-git": "^0.5.2",
+    "vile-language": "^0.1.13",
+    "vile-ncu": "^0.2.4",
+    "vile-retire": "^0.1.3",
+    "vile-stat": "^0.0.15"
   },
   "devDependencies": {
     "chai": "2.0.0",

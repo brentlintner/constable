@@ -1,6 +1,5 @@
 node_modules
 coverage
 npm-debug.log
-lib
 test/**/*.js
 test/fixtures/json/**/bower_components*

@@ -1,11 +1,6 @@
-# constable [![Circle CI](https://circleci.com/gh/brentlintner/constable.svg?style=svg)](https://circleci.com/gh/brentlintner/constable)
+# constable [![Circle CI](https://circleci.com/gh/brentlintner/constable.svg?style=svg)](https://circleci.com/gh/brentlintner/constable) [![NPM version](https://badge.fury.io/js/constable.svg)](http://badge.fury.io/js/constable) [![ISC License](http://img.shields.io/badge/ISC-License-brightgreen.svg)](https://tldrlegal.com/license/-isc-license) [![Dependency Status](https://david-dm.org/brentlintner/constable.svg)](https://david-dm.org/brentlintner/constable) [![devDependency Status](https://david-dm.org/brentlintner/constable/dev-status.svg)](https://david-dm.org/brentlintner/constable#info=devDependencies)
 
 Update your [bower](http://bower.io) dependencies to their latest version.
-
-[![NPM version](https://badge.fury.io/js/constable.svg)](http://badge.fury.io/js/constable)
-[![ISC License](http://img.shields.io/badge/ISC-License-brightgreen.svg)](https://tldrlegal.com/license/-isc-license)
-[![Dependency Status](https://david-dm.org/brentlintner/constable.svg)](https://david-dm.org/brentlintner/constable)
-[![devDependency Status](https://david-dm.org/brentlintner/constable/dev-status.svg)](https://david-dm.org/brentlintner/constable#info=devDependencies)
 
 ## Installation
 
@@ -27,17 +22,6 @@ This will update your `bower.json` file with the latest package versions.
 Then, install them with:
 
     bower install
-
-## Gotchas
-
-Data returned via the `bower list` command (which is used by `constable`) can be
-different than what your actual `bower.json` specifies, notably when you:
-
-1. Don't actually have the package installed.
-2. Have not run `bower install` after updating versions in `bower.json`.
-3. Have dependencies specified as `~x.y.1` but have `> x.y.1` installed.
-
-Essentially, things work out best if you have explicit versions set.
 
 ## Licensing
 
@@ -87,13 +71,4 @@ In Canada, a `constable` is defined as:
 
 Which felt appropriate, given the small nature of this project.
 
-## Can't Bower Do This?
-
-Bower does support updating dependencies via `bower update`,
-but not, it seems, when they are "frozen".
-
-In the future, it may be prudent to update or submit an issue to
-`bower` itself, or even `npm-police` to do this, vs have another project.
-
-In the meantime, I created this to do the simple task for writing
-the latest (frozen) versions to a `bower.json` project file.
+This was also a fun project partly inspired by [npm-police](https://github.com/pksunkara/npm-police).

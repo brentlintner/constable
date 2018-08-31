@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
+set -e
 coffeelint -q src
 coffeelint -q test

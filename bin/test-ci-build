@@ -1,15 +1,5 @@
 #!/usr/bin/env sh
 
-npm run compile &&
-npm run lint &&
-npm run test-cov
-
-## TODO once proper tests are written
-# npm run lint-cov
-
-status=$?
-
-if [ "$status" -gt 0 ]; then
-  echo "test-ci tasks returned $status. failing build!";
-  exit 1;
-fi
+set -e
+npm run -s compile
+npm run -s test-cov

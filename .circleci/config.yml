@@ -1,0 +1,22 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10-jessie-browsers
+    steps:
+      - checkout
+      - run: "[[ ! -s \"$(git rev-parse --git-dir)/shallow\" ]] || git fetch --unshallow"
+      - run: git fetch origin $CIRCLE_BRANCH
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install
+          command: npm i
+      - run:
+          name: Test
+          command: npm run -s test-ci-build
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules

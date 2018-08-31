@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-
 set -e
-npm run -s compile
-npm run -s test-cov
+npm run compile
+npm run test-cov

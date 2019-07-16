@@ -19,8 +19,8 @@ run = (type) ->
   runner = new Mocha
     ui: "bdd"
     reporter: "spec"
-    slow: 6000
-    timeout: 15000
+    slow: 10000
+    timeout: 30000
 
   runner.files = all_specs()
 
